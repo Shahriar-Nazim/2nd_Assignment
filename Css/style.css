@@ -294,56 +294,138 @@ footer {
 
 @media only screen and (max-width:688px) {
 
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
+
+
+    .container {
+
+        width: 100%;
         overflow-x: hidden;
     }
 
     .banner {
-        display: flex;
+
         flex-direction: column;
     }
 
     .banner_caption {
-        width: 3800px;
-        height: 100%;
+        max-width: 380px;
         margin-top: 20px;
-        padding-top: 10px;
+    }
 
+    .banner_img img {
+
+        width: 100%;
+        height: 100%;
+        margin: 230px 10px 86px 0;
     }
 
     .players {
 
-        background-color: red;
         grid-template-columns: repeat(1, 1fr);
-        grid-gap: 0px;
-        text-align: center;
-    }
-
-    .player_img {
-
-        overflow: visible;
     }
 
     .player_img img {
 
         width: 100%;
-        height: 100%;
+    }
 
+
+    #group_part {
+
+        width: 95%;
+    }
+
+    .groups {
+
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 0;
+        grid-row-gap: 50px;
+    }
+
+    .group {
+
+        padding: 10px;
+        margin-left: 0px;
+    }
+
+    .team_img img {
+        width: 18%;
+        height: 18%;
+    }
+
+    .sponsor_img {
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding-left: 50px;
+
+    }
+
+    .footer_logo img {
+
+        width: 98%;
+    }
+}
+
+@media only screen and (min-width:689px) and (max-width:992px) {
+
+
+    .container {
+
+        width: 100%;
+    }
+
+    .banner {
+
+        flex-direction: column;
+    }
+
+    .banner_caption {
+        width: 100%;
+        margin-top: 60px;
+        margin-left: 50px;
+    }
+
+    .players {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    .player {
+
+        padding-right: 0px;
+        margin-right: 0px;
+    }
+
+    .player_img img {
+
+        width: 98%;
     }
 
     #group_part {
 
-        background-color: red;
-        grid-template-columns: repeat(1, 1fr);
+        width: 90%;
     }
 
-    #players_part,
-    #sponsor,
-    .footer_part {
+    .groups {
 
-        display: none;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
     }
+
+    .group {
+
+        padding: 10px;
+        margin-left: 0px;
+    }
+
+    .team_img img {
+        width: 18%;
+        height: 18%;
+    }
+
+
+
+
 }
