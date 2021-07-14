@@ -399,9 +399,17 @@ header {
     }
 
     .banner_caption {
-        width: 100%;
+        width: 80%;
         margin-top: 60px;
         margin-left: 50px;
+        text-align: center;
+    }
+
+    .banner_caption .live_btn {
+
+        margin-top: 70px;
+        margin-bottom: 50px;
+
     }
 
     .players {
